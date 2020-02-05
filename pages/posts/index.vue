@@ -1,7 +1,6 @@
 <template>
   <div class="posts-page">
     <section class="intro">
-      Home Page
       <h1>get the latest teck news</h1>
     </section>
     <PostList />
