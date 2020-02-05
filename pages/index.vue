@@ -1,18 +1,12 @@
 <template>
-  <div class="home-page">
-   
-  </div>
+  <div class="home-page"></div>
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style scoped>
-
-
 .intro {
   height: 300px;
   position: relative;
@@ -43,5 +37,4 @@ export default {
     font-size: 2rem;
   }
 }
-
 </style>

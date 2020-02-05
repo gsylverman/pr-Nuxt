@@ -1,7 +1,6 @@
 <template>
-  <div  class="sidenav-container">
-    <div v-show="show" class="sidenav-backdrop" 
-      @click="$emit('close')">
+  <div class="sidenav-container">
+    <div v-show="show" class="sidenav-backdrop" @click="$emit('close')">
       <transition name="slide-side">
         <div v-if="show" class="sidenav">
           <ul class="nav-list">
@@ -24,7 +23,7 @@ export default {
       default: false
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -55,11 +54,13 @@ export default {
   padding: 30px;
 }
 
-.slide-side-enter-active, .slide-side-leave-active {
-  transition: all 0.5s ease-out;
+.slide-side-enter-active,
+.slide-side-leave-active {
+  transition: all 0.2s ease-out;
 }
 
-.slide-side-enter, .slide-side-leave-to {
+.slide-side-enter,
+.slide-side-leave-to {
   transform: translateX(-100%);
 }
 

@@ -1,49 +1,18 @@
 <template>
   <div class="posts-page">
-       <section class="intro">
+    <section class="intro">
       Home Page
       <h1>get the latest teck news</h1>
     </section>
-
-    <section class="post-list">
-      <PostPreview
-        thumbnail="https://images.unsplash.com/photo-1508558936510-0af1e3cccbab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-        id="1"
-        title="Title"
-        previwText="Some text"
-      />
-      <PostPreview
-        thumbnail="https://images.unsplash.com/photo-1508558936510-0af1e3cccbab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-        id="2"
-        title="Title"
-        previwText="Some text"
-      />
-      <PostPreview
-        thumbnail="https://images.unsplash.com/photo-1508558936510-0af1e3cccbab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-        id="3"
-        title="Title"
-        previwText="Some text"
-      />
-    </section>
+    <PostList />
   </div>
 </template>
 
 <script>
-import PostPreview from "~/components/Posts/PostsPreview";
+import PostList from "~/components/Posts/PostList";
 export default {
   components: {
-    PostPreview
+    PostList
   }
 };
 </script>
-
-<style scoped>
-.post-list {
-  display: flex;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-</style>

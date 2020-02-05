@@ -24,7 +24,7 @@ export default {
   components: {
     TheSideNavToggle
   }
-}
+};
 </script>
 
 <style scoped>
