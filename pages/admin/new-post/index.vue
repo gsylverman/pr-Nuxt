@@ -1,20 +1,17 @@
 <template>
-  <div class="admin-page">
-    <section class="new-post">
-      <button>Create Post</button>
-    </section>
-    <section class="existing-posts">
-      <h1>Existing</h1>
-      <Postlist />
+  <div class="admin-new-post-page">
+    <section class="new-post-form">
+     <AdminPostForm />
     </section>
   </div>
 </template>
 
 <script>
-import PostList from "~/components/Posts/PostList";
+import AdminPostForm from "~/components/Admin/AdminPostForm";
+
 export default {
-  components: {
-    Postlist
+  components:{
+    AdminPostForm
   }
 };
 </script>
